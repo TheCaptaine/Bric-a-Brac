@@ -8,6 +8,8 @@ mark_player = 0
 mark_computer = 0
 tour = 3
 
+print("Rock Paper Scissors".center(50, "-"), "\n\n")
+
 def Game(tour = 3, mark_player = 0, mark_computer = 0):
     while tour != 0:
         player = input("\n< scissors, paper or rock ? ")
