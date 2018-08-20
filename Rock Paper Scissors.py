@@ -3,7 +3,7 @@ jeu = True
 sentence1 = "Computer choice is {}, Player win one mark"
 sentence2 = "Computer choice is {}, Computer win one mark"
 lib1 = {"scissors" : 1, "paper" : 2, "rock" : 3}
-lib2 = { lib1[k]:k for k in lib1}
+lib2 = {lib1[k]:k for k in lib1}
 
 print("Rock Paper Scissors".center(50, "-"), "\n\n")
 
@@ -32,7 +32,6 @@ def Game(tour = 3, mark_player = 0, mark_computer = 0):
             tour -= 1
         except KeyError:
             print("Choose a valid action")
-            tour += 1
 
     print("\nscore : Player => {}\n\
         Computer => {}".format(mark_player, mark_computer))
