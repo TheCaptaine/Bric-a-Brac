@@ -4,9 +4,6 @@ sentence1 = "Computer choice is {}, Player win one mark"
 sentence2 = "Computer choice is {}, Computer win one mark"
 lib1 = {"scissors" : 1, "paper" : 2, "rock" : 3}
 lib2 = { lib1[k]:k for k in lib1}
-mark_player = 0
-mark_computer = 0
-tour = 3
 
 print("Rock Paper Scissors".center(50, "-"), "\n\n")
 
