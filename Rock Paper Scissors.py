@@ -40,10 +40,10 @@ def Game(tour = 3, mark_player = 0, mark_computer = 0):
     print("\nscore : Player => {}\n\
         Computer => {}".format(mark_player, mark_computer))
     if mark_player > mark_computer:
-        print("Player WIN")
+        print("Player WIN\n")
         return 
     else:
-        print("Computer WIN")
+        print("Computer WIN\n")
         return 
 
 while jeu:
