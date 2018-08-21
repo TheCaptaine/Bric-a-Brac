@@ -3,7 +3,6 @@ import random
 def game(Try = 1):
 	Nombre_a_deviner = list(str(int(random.randint(0, 9999))))
 	print("Cows And Bulls".center(50, "-"), "\n\n")
-	print(Nombre_a_deviner)
 	while True:
 		cow, bull = 0, 0
 		enter = list(input("< enter a {}-digit number ".format(len(Nombre_a_deviner))))
