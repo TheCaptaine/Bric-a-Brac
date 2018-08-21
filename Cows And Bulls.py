@@ -1,4 +1,5 @@
 import random
+import collections
 
 def game(Try = 1):
 	Nombre_a_deviner = list(str(int(random.randint(0, 9999))))
