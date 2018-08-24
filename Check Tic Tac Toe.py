@@ -18,8 +18,7 @@ def winner(tableau):
     return vainqueur
 
 def colonne(tableau):
-    panelC = []
-    colonne, colonne2, colonne3 = [], [], []
+    colonne, colonne2, colonne3, panelC = [], [], [], []
     for x in range(3):
         colonne.append(tableau[x][0])
         colonne2.append(tableau[x][1])
@@ -30,8 +29,7 @@ def colonne(tableau):
     return panelC
 	
 def diagonale(tableau):
-    panelD = []
-    diagonale, diagonale2 = [], []
+    diagonale, diagonale2, panelD = [], [], []
     for i in range(3):
         if i == 1:
             diagonale.append(tableau[i][i])
