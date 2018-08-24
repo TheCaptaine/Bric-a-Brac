@@ -46,8 +46,8 @@ def diagonale(tableau):
     panelD.append(diagonale2)
     return panelD
 	
-while game:
-    enter = list(input("\n< Where do you want play ? "))
+while game:                                                   #                                ^^^
+    enter = list(input("\n< Where do you want play ? "))      # enter the coordinates ( see up ||| )
     try:
         if tour%2 == 0 and liste[dic[enter[1]]][dic[enter[0]]] == 0:
             liste[dic[enter[1]]][dic[enter[0]]] = 2
