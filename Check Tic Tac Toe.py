@@ -1,7 +1,5 @@
 import collections
-tour = 1
-vainqueur = 0
-game = True
+tour, vainqueur, game = 1, 0, True
 
 dic = {"a" : 0, "b" : 1, "c" : 2}                                 # a    b    c       
 liste = [[0, 0, 0],        #  =====>                           # a  aa   ba   ca
