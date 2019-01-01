@@ -366,3 +366,13 @@ def trier_transposer(n):
 	[print(ligne) for ligne in n]
 	return
 	
+import os
+import time
+
+def attente(temps):
+	for k in range(1, temps+1,1):
+		os.system('clear')
+		print("[{}] {}%".format("-"*int(k*15/temps), int(k*100/temps)))
+		time.sleep(1)
+
+attente(10)
