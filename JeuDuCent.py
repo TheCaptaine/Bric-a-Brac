@@ -17,8 +17,7 @@ input("< Appuier sur entrer pour commencer le jeu. ")
 
 """ Jeux """
 
-chiffre, arene, passage, deplacementL, Game = 0, [], [], [(ligne-2, colonne-2), (ligne-2, colonne+2), (ligne+2, colonne-2), (ligne+2, colonne+2),
-(ligne, colonne-3), (ligne, colonne+3), (ligne-3, colonne), (ligne+3, colonne)], True
+chiffre, arene, passage, Game = 0, [], [], True
 for i in range(10):
 	for k in range(10):
 		passage.append(' ')
@@ -54,7 +53,8 @@ def verification1(ligne, colonne):
 			if arene[l][c] == str(chiffre - 1):
 				lgne = l
 				clnne = c
-	if (ligne, colonne) in deplacementL:
+	if (ligne, colonne) in [(ligne-2, colonne-2), (ligne-2, colonne+2), (ligne+2, colonne-2), (ligne+2, colonne+2),
+(ligne, colonne-3), (ligne, colonne+3), (ligne-3, colonne), (ligne+3, colonne)]:
 		try:
 			if arene[ligne][colonne] != " ":
 				print("\nDeplacement impossible\n")
@@ -70,7 +70,8 @@ def verification1(ligne, colonne):
 
 def verification2(ligne, colonne, chance=0):
 	global chiffre
-	for k in deplacementL:
+	for k in [(ligne-2, colonne-2), (ligne-2, colonne+2), (ligne+2, colonne-2), (ligne+2, colonne+2),
+(ligne, colonne-3), (ligne, colonne+3), (ligne-3, colonne), (ligne+3, colonne)]:
 		try:
 			if arene[k[0]][k[1]] == " " and k[0] >= 0 and k[1] >= 0:
 				print('{}, {}'.format(k[0], k[1]))
