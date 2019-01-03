@@ -53,8 +53,8 @@ def verification1(ligne, colonne):
 			if arene[l][c] == str(chiffre - 1):
 				lgne = l
 				clnne = c
-	if (ligne, colonne) in [(ligne-2, colonne-2), (ligne-2, colonne+2), (ligne+2, colonne-2), (ligne+2, colonne+2),
-(ligne, colonne-3), (ligne, colonne+3), (ligne-3, colonne), (ligne+3, colonne)]:
+	if (ligne, colonne) in [(lgne,clnne-3), (lgne,clnne+3), (lgne-2,clnne-2), 
+	(lgne-2,clnne+2), (lgne+2,clnne-2), (lgne+2,clnne+2),(lgne-3,clnne), (lgne+3,clnne)]:
 		try:
 			if arene[ligne][colonne] != " ":
 				print("\nDeplacement impossible\n")
