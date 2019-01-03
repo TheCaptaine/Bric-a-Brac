@@ -101,4 +101,4 @@ while Game:
 			print("\n/!{} Nombre positif requis\n".format(chr(92)))
 	except ValueError:
 		os.system('clear')
-		print("\nVeuillez choisir des nombres entier compris entre [0, 9]")
+		print("\nVeuillez choisir des nombres entiers compris entre [0, 9]")
