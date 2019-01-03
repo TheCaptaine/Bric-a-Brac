@@ -36,8 +36,8 @@ def verification1(ligne, colonne):
 			if arene[l][c] == str(chiffre - 1):
 				lgne = l
 				clnne = c
-	if (ligne, colonne) in [(lgne,clnne-2), (lgne,clnne+2), (lgne-1,clnne-1), 
-	(lgne-1,clnne+1), (lgne+1,clnne-1), (lgne+1,clnne+1),(lgne-2,clnne), (lgne+2,clnne)]:
+	if (ligne, colonne) in [(lgne,clnne-3), (lgne,clnne+3), (lgne-2,clnne-2), 
+	(lgne-2,clnne+2), (lgne+2,clnne-2), (lgne+2,clnne+2),(lgne-3,clnne), (lgne+3,clnne)]:
 		try:
 			if arene[ligne][colonne] != " ":
 				print("\nDeplacement impossible\n")
@@ -53,8 +53,8 @@ def verification1(ligne, colonne):
 
 def verification2(ligne, colonne, chance=0):
 	global chiffre
-	for k in [(ligne-1, colonne-1), (ligne-1, colonne+1), (ligne+1, colonne-1), (ligne+1, colonne+1),
-(ligne, colonne-2), (ligne, colonne+2), (ligne-2, colonne), (ligne+2, colonne)]:
+	for k in [(ligne-2, colonne-2), (ligne-2, colonne+2), (ligne+2, colonne-2), (ligne+2, colonne+2),
+(ligne, colonne-3), (ligne, colonne+3), (ligne-3, colonne), (ligne+3, colonne)]:
 		try:
 			if arene[k[0]][k[1]] == " " and k[0] >= 0 and k[1] >= 0:
 				print('{}, {}'.format(k[0], k[1]))
