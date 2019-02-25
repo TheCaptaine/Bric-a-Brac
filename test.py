@@ -58,8 +58,6 @@ plt.axis([-0.01, 0.01, 0, 4])
 plt.show()
 
 #Q4
-Y = np.linspace(-0.01, 0.01, 1000)
-X = np.linspace(-10, 10, 1000)
-XX, YY = np.meshgrid(X, Y)
-plt.imshow(vec_expint(XX, YY, 1e-6, d, D, s, longueur_onde))
-
+X, Y = np.meshgrid(np.linspace(-10, 10, 100), np.linspace(-0.01, 0.01, 100))
+Z = vec_expint(X, Y, 1e-6, d, D, s, longueur_onde)
+plt.imshow(Z, cmap=plt.cm.gray, vmax=10,vmin=-10)
