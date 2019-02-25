@@ -60,4 +60,5 @@ plt.show()
 #Q4
 X, Y = np.meshgrid(np.linspace(-10, 10, 100), np.linspace(-0.01, 0.01, 100))
 Z = vec_expint(X, Y, 1e-6, d, D, s, longueur_onde)
+plt.title('I(X,Y,R)')
 plt.imshow(Z, cmap=plt.cm.gray, vmax=10,vmin=-10)
