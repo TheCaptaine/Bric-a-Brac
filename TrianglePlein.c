@@ -7,12 +7,10 @@ int main(int argc, char *argv[]) {
 	int i, j;
 	for (i = 0; i < size; i++) {
 		centrage(size - 1 - i);
-		for (j = 0; j < i; j++) {
+		for (j = 0; j < i; j++)
 			printf("*");
-		}
-		for (j = 0; j < i - 1; j++) {
+		for (j = 0; j < i - 1; j++)
 			printf("*");
-		}
 		printf("\n");
 	}
 	return 0;
